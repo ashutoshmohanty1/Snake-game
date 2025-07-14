@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Domain</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div style="margin-top: 10px;position: absolute;">
+        <button id="startBtn">Start Game</button>
+    </div>
+
+    <div id="gameOverMessage">
+        <h2>💀 Game Over!</h2>
+        <p>Your snake crashed!</p>
+        <button id="restartBtn">Restart</button>
+    </div>
+
+    <div class="body">
+        <div id="scoreBox">Score: 0</div>
+        <div id="hiscoreBox">High Score: 0</div>
+        <div id="board"></div>
+    </div>
+
+    <div id="difficultyContainer">
+    <label for="difficulty">Difficulty:</label>
+    <select id="difficulty">
+        <option value="1">Easy</option>
+        <option value="2">Medium</option>
+        <option value="4">Hard</option>
+        <option value="6">Hard Core</option>
+        <option value="8">Extreme</option>
+    </select>
+
+    <div id="mobileControls">
+        <button class="control-btn" id="up">⬆️</button>
+        <div>
+            <button class="control-btn" id="left">⬅️</button>
+            <button class="control-btn" id="down">⬇️</button>
+            <button class="control-btn" id="right">➡️</button>
+        </div>
+    </div>
+
+</div>
+
+</body>
+<script src="js/index.js"></script>
+</html>
